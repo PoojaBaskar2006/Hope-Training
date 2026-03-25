@@ -1,0 +1,103 @@
+1. length()
+
+This method returns the total number of characters present in a string, including spaces and special characters. It is commonly used to determine string size when applying loops or validations. The return type is an integer, so it can be directly used in conditions or calculations.
+
+str.length();
+
+
+2. isEmpty()
+
+This method checks whether a string is empty or not by verifying if its length is zero. It returns true only when the string has no characters at all. It does not ignore spaces, meaning a string with spaces is still considered non-empty.
+
+str.isEmpty();
+
+
+3. charAt(int index)
+
+This method returns the character present at a specific index in the string. The index starts from 0, so the first character is accessed using index 0. If the index is out of bounds, it throws an exception.
+
+str.charAt(2);
+
+
+4. equals(String s)
+
+This method compares two strings based on their content to check if they are equal. It returns true only when both strings have the same characters in the same order. This comparison is case-sensitive, so "Hello" and "hello" are not equal.
+
+str1.equals(str2);
+
+
+5. equalsIgnoreCase(String s)
+
+This method compares two strings while ignoring differences in letter case. It returns true if the strings are equal regardless of uppercase or lowercase characters. It is useful when case sensitivity is not important.
+
+str1.equalsIgnoreCase(str2);
+
+
+6. compareTo(String s)
+
+This method compares two strings lexicographically based on Unicode values. It returns 0 if both strings are equal, a positive value if the first is greater, and a negative value if smaller. It is useful for sorting strings.
+
+str1.compareTo(str2);
+
+
+7. contains(CharSequence s)
+
+This method checks whether a string contains a specified sequence of characters. It returns true if the substring is found anywhere within the string. It is case-sensitive and useful for search operations.
+
+str.contains("abc");
+
+
+8. indexOf(String s)
+
+This method returns the index of the first occurrence of a specified substring. If the substring is not found, it returns -1. It is useful for locating positions within a string.
+
+str.indexOf("a");
+
+
+9. lastIndexOf(String s)
+
+This method returns the index of the last occurrence of a substring in the string. If the substring does not exist, it returns -1. It is helpful when searching from the end of the string.
+
+str.lastIndexOf("a");
+
+
+10. substring(int begin, int end)
+
+This method extracts a portion of the string from the given starting index to the ending index (exclusive). It helps in slicing strings for specific parts. The original string remains unchanged.
+
+str.substring(1,4);
+
+
+11. toUpperCase()
+
+This method converts all characters in the string to uppercase. It does not modify the original string but returns a new one. It is useful when case consistency is needed.
+
+str.toUpperCase();
+
+
+12. toLowerCase()
+
+This method converts all characters in the string to lowercase. It returns a new string without changing the original. It is useful for case-insensitive comparisons.
+
+str.toLowerCase();
+
+
+13. trim()
+
+This method removes leading and trailing spaces from the string. It does not remove spaces in between words. It is useful for cleaning user input.
+
+str.trim();
+
+
+14. replace(old, new)
+
+This method replaces all occurrences of a specified character or substring with another. It returns a new modified string without changing the original. It is useful for editing text.
+
+str.replace('a','b');
+
+
+15. split(String regex)
+
+This method splits the string into an array based on a delimiter or pattern. It is commonly used to break sentences into words. The result is stored in a string array.
+
+str.split(" ");

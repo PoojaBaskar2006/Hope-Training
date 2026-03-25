@@ -1,0 +1,245 @@
+Java String Methods
+
+1. equals():
+
+Definition:
+Compares two strings for equality based on their content. It is case-sensitive.
+
+Syntax:
+boolean equals(Object another)
+
+Example:
+String s1 = "Java";
+String s2 = "java";
+System.out.println(s1.equals(s2));
+
+Output:
+false
+
+
+2. length():
+
+Definition:
+Returns the total number of characters present in the string.
+
+Syntax:
+int length()
+
+Example:
+String s = "hello";
+System.out.println(s.length());
+
+Output:
+5
+
+
+3. substring():
+
+Definition:
+Returns a new string which is a subset of the original string, starting from the specified index.
+
+Syntax:
+String substring(int beginIndex) or String substring(int beginIndex, int endIndex)
+
+Example:
+String s = "Programming";
+System.out.println(s.substring(0, 4));
+
+Output:
+Prog
+
+
+4. contains():
+
+Definition:
+Checks whether a string contains a specific sequence of characters.
+
+Syntax:
+boolean contains(CharSequence s)
+
+Example:
+String s = "Learning Java";
+System.out.println(s.contains("Java"));
+
+Output:
+true
+
+
+5. isEmpty():
+
+Definition:
+Checks whether the string is empty (checks if length() is 0).
+
+Syntax:
+boolean isEmpty()
+
+Example:
+String s = "";
+System.out.println(s.isEmpty());
+
+Output:
+true
+
+
+6. replace():
+
+Definition:
+Searches a string for a specified character or sequence and returns a new string where those values are replaced.
+
+Syntax:
+String replace(char oldChar, char newChar)
+
+Example:
+String s = "Java";
+System.out.println(s.replace('a', 'o'));
+
+Output:
+Jovo
+
+
+7. split():
+
+Definition:
+Splits the string into an array of strings based on a specified regular expression (delimiter).
+
+Syntax:
+String[] split(String regex)
+
+Example:
+String s = "apple,banana,cherry";
+String[] fruits = s.split(",");
+System.out.println(fruits[0]);
+
+Output:
+apple
+
+
+8. trim():
+
+Definition:
+Removes whitespace from both ends of a string.
+
+Syntax:
+String trim()
+
+Example:
+String s = " Hello Java ";
+System.out.println(s.trim());
+
+Output:
+Hello Java
+
+
+9. toUpperCase() / toLowerCase():
+
+Definition:
+Converts all characters of the string into uppercase or lowercase.
+
+Syntax:
+String toUpperCase() / String toLowerCase()
+
+Example:
+String s = "hello";
+System.out.println(s.toUpperCase());
+
+Output:
+HELLO
+
+
+10. indexOf():
+
+Definition:
+Returns the index of the first occurrence of the specified character or substring. Returns -1 if not found.
+
+Syntax:
+int indexOf(String str)
+
+Example:
+String s = "Hello";
+System.out.println(s.indexOf('e'));
+
+Output:
+1
+
+
+11. charAt():
+
+Definition:
+Returns the character present at a specified index. Index starts from 0.
+
+Syntax:
+char charAt(int index)
+
+Example:
+String s = "hello";
+System.out.println(s.charAt(1));
+
+Output:
+e
+
+
+12. equalsIgnoreCase():
+
+Definition:
+Compares two strings for equality, ignoring case considerations.
+
+Syntax:
+boolean equalsIgnoreCase(String another)
+
+Example:
+String s1 = "Java";
+String s2 = "java";
+System.out.println(s1.equalsIgnoreCase(s2));
+
+Output:
+true
+
+
+13. startsWith() / endsWith():
+
+Definition:
+Checks whether a string starts or ends with the specified prefix or suffix.
+
+Syntax:
+boolean startsWith(String prefix) / boolean endsWith(String suffix)
+
+Example:
+String s = "JavaProject";
+System.out.println(s.startsWith("Java"));
+
+Output:
+true
+
+
+14. valueOf():
+
+Definition:
+Returns the string representation of the passed argument (int, double, float, boolean, etc.).
+
+Syntax:
+static String valueOf(int i)
+
+Example:
+int num = 10;
+System.out.println(String.valueOf(num) + 5);
+
+Output:
+105
+
+
+15. compareTo():
+
+Definition:
+Compares two strings lexicographically (based on Unicode value of characters).
+
+Syntax:
+int compareTo(String anotherString)
+
+Example:
+String s1 = "apple";
+String s2 = "banana";
+System.out.println(s1.compareTo(s2));
+
+Output:
+-1 (Since 'a' comes before 'b')
+

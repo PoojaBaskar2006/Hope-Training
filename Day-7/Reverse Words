@@ -1,0 +1,24 @@
+import java.util.*;
+class Reverse_Words
+{
+    public static void main(String[] args)
+    {
+        Scanner z=new Scanner(System.in);
+        String s=z.nextLine();
+
+        String res="",word="";
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)!=' '){
+                word+=s.charAt(i);
+            }
+            else{
+                res=word+" "+res;
+                word="";
+            }
+        }
+        res=word+" "+res;
+        System.out.print(res);
+
+    }
+}

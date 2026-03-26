@@ -1,0 +1,36 @@
+import java.util.*;
+class CountOf_Each_Char_WOBuildin{
+    public static void main(String[] args){
+        Scanner z=new Scanner(System.in);
+        String s=z.nextLine();
+
+        for(int i=0;i<s.length();i++){
+            boolean flag=false;
+            char ch=s.charAt(i);
+            for(int k=0;k<i;k++){
+                if(s.charAt(k)==ch){
+                    flag=true;
+                    break;
+                }
+            }
+            if(flag==true){
+                continue;
+            }
+            else{
+                int c=1;
+                for(int j=i+1;j<s.length();j++){
+                    if(s.charAt(j)==ch){
+                        c++;
+                    }
+                }
+            
+            if(ch==' '){
+                System.out.println("Space"+":"+c);
+            }
+            else{
+                System.out.println(ch+":"+c);
+            }
+        }}
+
+    }
+}

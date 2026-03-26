@@ -1,0 +1,18 @@
+import java.util.*;
+class CountOf_Each_Char{
+    public static void main(String[] args){
+        Scanner z=new Scanner(System.in);
+        String s=z.nextLine();
+
+        int[] f=new int[256];
+        for(int i=0;i<s.length();i++){
+            f[s.charAt(i)]++;
+        }
+
+        for(int i=0;i<256;i++){
+            if(f[i]!=0){
+            System.out.println((char)i+":"+f[i]);
+        }}
+
+    }
+}

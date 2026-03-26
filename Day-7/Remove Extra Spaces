@@ -1,0 +1,26 @@
+import java.util.*;
+class Remove_Space
+{
+    public static void main(String[] args)
+    {
+        Scanner z=new Scanner(System.in);
+        String s=z.nextLine();
+
+        String res="";
+        boolean f=true;
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)!=' '){
+                res+=s.charAt(i);
+                f=true;
+            }
+            else if(s.charAt(i)==' ' && f==true){
+                res+=" ";
+                f=false;
+            }
+        }
+        
+        System.out.print(res);
+
+    }
+}

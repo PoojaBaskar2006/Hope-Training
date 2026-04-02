@@ -1,0 +1,21 @@
+import java.util.*;
+class Amazon{
+    void search(String product){
+        System.out.println("product :"+ product );
+    }
+     void search(String product,int price){
+        System.out.println("product :" + product + " price:" + price);
+     }
+     void search(String product,int price, String a){
+        System.out.println("product:" + product + " price:" + price + " electronic:" + a);
+     }
+}
+public class Main{
+	public static void main(String[] args) {
+	    Amazon am = new Amazon();
+	    am.search("laptop");
+	    am.search("lapton", 100000);
+	    am.search("laptop",10000,"tu8v");
+       
+	}
+}
